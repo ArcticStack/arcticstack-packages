@@ -9,6 +9,7 @@ URL:		https://dun.github.io/conman/
 Source0:	https://github.com/dun/conman/releases/download/%{name}-%{version}/%{name}-%{version}.tar.xz
 
 BuildRequires:	freeipmi-devel >= 1.0.4
+BuildRequires:	gcc
 BuildRequires:	systemd
 Requires:	expect
 Requires(post): systemd
