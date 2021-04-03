@@ -9,7 +9,6 @@ Url: http://github.com/chaos/powerman
 Source0: https://github.com/chaos/powerman/releases/download/%{version}/%{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-BuildRequires: tcp_wrappers-devel
 BuildRequires: libgenders-devel
 BuildRequires: curl-devel
 BuildRequires: net-snmp-devel
@@ -44,7 +43,6 @@ A shared library for applications using PowerMan.
   --with-genders \
   --with-httppower \
   --with-snmppower \
-  --with-tcp-wrappers \
   --with-systemdsystemunitdir=%{_unitdir} \
   --program-prefix=%{?_program_prefix:%{_program_prefix}}
 make
