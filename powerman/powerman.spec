@@ -13,6 +13,7 @@ BuildRequires: libgenders-devel
 BuildRequires: curl-devel
 BuildRequires: net-snmp-devel
 BuildRequires: systemd
+BuildRequires: gcc
 
 %package devel
 Requires: %{name} = %{version}-%{release}
